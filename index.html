@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+
+
+  <main id="container">
+    <section id="img">
+      <img src="/HEADER-RED.jpg">
+  </section>
+    <section id="calculadora">
+    
+      <form id="form">
+
+        <div class="input-box">
+        <label for="vazao">Vazão
+
+        </label>
+        <div class="input-field">
+          <i class="fa-solid fa-syringe"></i>
+          <input type="number" id="vazao" required>
+          <span>Ml/h</span>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label for="peso">Peso do paciente
+
+        </label>
+        <div class="input-field">
+          <i class="fa-solid fa-weight-scale"></i>
+          <input type="number" id="peso" required>
+          <span>Kg</span>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label for="droga">Quantidade de droga
+
+        </label>
+        
+        <div class="input-field">
+          <i class="fa-solid fa-capsules"></i>
+          <input type="number" id="droga" required>
+          <span>Mg</span>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label for="volume">Volume
+
+        </label>
+        
+        <div class="input-field">
+          <i class="fa-solid fa-droplet"></i>
+          <input type="number" id="volume" required>
+          <span>Ml</span>
+          
+        </div>
+      </div>
+
+
+
+      
+      
+      <button id="calculate">
+        Calcular
+      </button>
+      
+      </form>
+      <div id="infos" class="hidden">
+        <div id="result">
+            <div id="bmi">
+                <span id="value"></span>
+                <span>Mcg/kg/min</span>
+            </div>
+            <div id="description">
+                <span></span>
+            </div>  
+        </div>
+
+       
+    </div>   
+</section>
+</main>
+<script src="/scripts.js"></script>
+</body>
+</html>
