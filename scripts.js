@@ -7,16 +7,17 @@ form.addEventListener('submit', function (event) {
     const peso = document.getElementById('peso').value;
     const droga = document.getElementById('droga').value;
     const volume = document.getElementById('volume').value;
-   
+    const med = document.getElementById('plataforma').value;
     const fixo = 60;
     const mil = 1000;
-  
 
+    
+  
 
   
     /* Recebo dados dos inputs */
 
-    const bmi = (((((droga / volume) * vazao) / peso) / fixo) * mil).toFixed(2);
+    const bmi = (((((droga * med / volume) * vazao) / peso) / fixo) * mil).toFixed(2);
 
 
     const value = document.getElementById('value');
@@ -43,3 +44,14 @@ form.addEventListener('submit', function (event) {
 );
 
 
+
+
+
+
+
+function getSelectValue()
+{
+    var selectedValue = document.getElementById("plataforma").value;
+    console.log(selectedValue);
+}
+getSelectValue();
