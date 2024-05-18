@@ -19,7 +19,7 @@
       <form id="form">
 
         <div class="input-box">
-        <label for="vazao">Vazão
+        <label for="vazao">Vazão da Bomba de Infusão
 
         </label>
         <div class="input-field">
@@ -41,21 +41,22 @@
       </div>
 
       <div class="input-box">
-        <label for="droga">Quantidade de droga
+        <label for="droga">Quantidade de ampolas
 
         </label>
         
         <div class="input-field">
-          <i class="fa-solid fa-capsules"></i>
+          <i class="fa-solid fa-vial"></i>
           <input type="number" id="droga" required>
-          <span>Mg</span>
+          <span>Ampolas</span>
         </div>
       </div>
 
       <div class="input-box">
-        <label for="volume">Volume
+        <label for="volume">Volume de Soro 
 
         </label>
+       
         
         <div class="input-field">
           <i class="fa-solid fa-droplet"></i>
@@ -64,6 +65,18 @@
           
         </div>
       </div>
+
+        <label for="dva">Droga Vasoativa
+
+        </label>
+      <select id="plataforma" required="required" onchange="getSelectValue();">
+     
+        <option value="4">Noradrenalina</option>
+        <option value="250">Dobutamina</option>
+        <option value="1">Adrenalina</option>
+        <option value="50">Nitroprussiato de Sódio</option>
+        <option value="50">Nitroglicerina</option>
+    </select>
 
 
 
@@ -88,6 +101,7 @@
        
     </div>   
 </section>
+
 </main>
 <script src="/scripts.js"></script>
 </body>
